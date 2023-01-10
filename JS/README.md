@@ -1,18 +1,20 @@
 # 자바스크립트
 
+### 자바스크립트
+
 - 자바스크립트에서 비동기가 어떻게 이루어지나요? ⭐⭐⭐
-- 동기와 비동기의 차이에 대해 설명해주세요
+- 동기와 비동기의 차이에 대해 설명해주세요 ⭐⭐⭐
 - 이벤트 루프(Event loop)에 대해 설명해주세요 ⭐⭐⭐
   - 콜 스택과 태스크 큐의 차이점은 무엇인가요? ⭐⭐⭐
-- 마이크로태스크 큐에 대해 설명해주세요
+- 마이크로태스크 큐에 대해 설명해주세요 ⭐
   - 태스크 큐와 마이크로태스크 큐 중 어느 것이 먼저 실행되나요?
 - this에 대해 설명해주세요 ⭐⭐⭐
-  - 일반함수의 this와 화살표함수의 this의 차이점에 대해 설명해주세요
+  - 일반함수의 this와 화살표함수의 this의 차이점에 대해 설명해주세요 ⭐
   - call, apply, bind에 대해 설명해주세요 ⭐⭐
   - use strict 모드에서 this는 무엇인가요?
 - var, let, const의 차이점에 대해 설명해주세요 ⭐⭐⭐
 - 이벤트 버블링과 캡쳐링이란 무엇인가요? ⭐⭐⭐
-  - 이벤트 버블링을 막으려면 어떻게 해야할까요?
+  - 이벤트 버블링을 막으려면 어떻게 해야할까요? ⭐
 - 실행 컨텍스트(Execution Context)란 무엇인가요? ⭐⭐⭐
 - 클로저(Closure)란 무엇이고 왜 사용하는지 설명해주세요 ⭐⭐⭐
 - promise, callback의 차이점과 장단점에 대해 설명해주세요 ⭐⭐⭐
@@ -23,23 +25,24 @@
 - 일반 함수와 화살표 함수(arrow function)의 차이에 대해 설명해주세요 ⭐⭐
 - TDZ에 대해 설명해주세요 ⭐⭐
 - async, await에 대해 설명해주세요 ⭐⭐
+- ES6에 추가된 기능에 대해 설명해주세요 ⭐⭐
 - 스코프(Scope)에 대해 설명해주세요 ⭐⭐ 
   - 일반적으로 웹 사이트의 전역 스코프를 그대로 두고 건드리지 않는 것이 좋은 이유는 무엇인가요?
-
+- 디바운스와 쓰로틀에 대해 설명해 주세요 ⭐
+- 렉시컬 환경에 대해 설명해주세요 ⭐
+- 커링에 대해 설명해주세요 ⭐
+- 자바스크립트의 특징과 장단점은 무엇인가요? ⭐
+  - 컴파일러 언어와 인터프리터 언어의 차이점에 대해 설명해주세요 ⭐
+- 이벤트 위임(Event Delegation)은 무엇인가요? ⭐
+- 고차 함수에 대해 설명해주세요 ⭐ 
+  - map, forEach의 차이점에 대해 설명해주세요
+- Ajax에 대해 설명해주세요 ⭐ 
+- JSON에 대해 설명해주세요 ⭐ 
+- 엄격 모드(Strict mode)란 무엇인가요? ⭐
+- `==`, `===`의 차이점에 대해 설명해주세요
+- 함수 선언문과 함수 표현식의 차이에 대해 설명해주세요
 - 자바스크립트 데이터 타입에 대해 설명해주세요
   - 자바스크립트의 number type이 다른 언어와의 차이점에 대해 설명해주세요
-- 커링에 대해 설명해주세요
-- 자바스크립트의 특징과 장단점은 무엇인가요?
-  - 컴파일러 언어와 인터프리터 언어의 차이점에 대해 설명해주세요
-- 이벤트 위임(Event Delegation)은 무엇인가요?
-- 함수 선언문과 함수 표현식의 차이에 대해 설명해주세요
-- 고차 함수에 대해 설명해주세요 
-  - map, forEach의 차이점에 대해 설명해주세요
-- Ajax에 대해 설명해주세요
-- JSON에 대해 설명해주세요
-- `==`, `===`의 차이점에 대해 설명해주세요
-- ES6에 추가된 기능에 대해 설명해주세요
-- 엄격 모드(Strict mode)란 무엇인가요?
 - 네이티브 객체, 호스트 객체의 차이점에 대해 설명해주세요
 - 즉시 실행 함수(IIFE)에 대해 설명해주세요
   - `function foo(){ }();`를 IIFE로 만들기 위해서는 무엇을 바꿔야하나요?
@@ -53,9 +56,7 @@
 - 자바스크립트 배열과 자료구조의 배열의 차이에 대해 설명해주세요
 - 자바스크립트에서 객체에 대해 설명해주세요
 - 값에 의한 전달과 참조에 대한 전달의 차이에 대해 설명해주세요
-- 디바운스와 쓰로틀에 대해 설명해 주세요
 - 모듈에 대해 설명해주세요
-- 렉시컬 환경에 대해 설명해주세요
 - 명시적 타입 변환에 대해 설명해주세요
 - 값에 의한 전달과 참조에 의한 전달에 대해 각각 설명해주세요
 - spread 문법은 무엇이고 rest 문법과의 차이점에 대해 설명해주세요
@@ -77,14 +78,20 @@
 - 익명 함수의 일반적인 사용 사례는 무엇인가요?
 - 언제 `document.write()`를 사용하나요?
 - document load 이벤트와 document DOMContentLoaded 이벤트의 차이점은 무엇인가요?
-- 왜 load 이벤트와 같은 것을 사용하나요? 이 이벤트에는 단점이 있나요? 다른 대안을 알고 있나요? 알고 있다면 왜 그것을 사용할 건가요?
+- 왜 load 이벤트와 같은 것을 사용하나요? 
+  - 이 이벤트에는 단점이 있나요? 다른 대안 있는지, 있다면 왜 그것을 사용할 것인지 설명해주세요
 - Promises와 그 Polyfill에 대해 사용한 경험에 대해 말해주세요
 - mutable 객체와 immutable 객체 사이의 차이점에 대해 설명해주세요
 
-- 타입스크립트와 자바스크립트의 차이점에 대해 설명해주세요
-- 함수형 프로그래밍에 대해 설명해주세요
+### 타입스크립트
+
+- 타입스크립트와 자바스크립트의 차이점에 대해 설명해주세요 ⭐
+
+### 함수형 프로그래밍
+
+- 함수형 프로그래밍에 대해 설명해주세요 ⭐
   - 순수 함수에 대해 설명해주세요
 
+##### 참고 자료
 
-
-출처 : [취준생이 반드시 알아야 할 프론트엔드 지식들](https://github.com/baeharam/Must-Know-About-Frontend#fire-javascript), [네카라쿠배 무조건 가는 신입 개발자 면접 예상 질문 50제 - 기술](https://blog.naver.com/PostView.naver?blogId=fastcampus_nklcb&logNo=222257396306&categoryNo=14&parentCategoryNo=0), [프론트엔드 개발자 면접 질문(기술면접) 정리](https://sunnykim91.tistory.com/121), [prepare_frontend_interview](https://github.com/junh0328/prepare_frontend_interview/blob/main/js.md), [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/main/src/questions/css-questions.md)
+[취준생이 반드시 알아야 할 프론트엔드 지식들](https://github.com/baeharam/Must-Know-About-Frontend#fire-javascript), [네카라쿠배 무조건 가는 신입 개발자 면접 예상 질문 50제 - 기술](https://blog.naver.com/PostView.naver?blogId=fastcampus_nklcb&logNo=222257396306&categoryNo=14&parentCategoryNo=0), [프론트엔드 개발자 면접 질문(기술면접) 정리](https://sunnykim91.tistory.com/121), [prepare_frontend_interview](https://github.com/junh0328/prepare_frontend_interview/blob/main/js.md), [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/main/src/questions/css-questions.md)

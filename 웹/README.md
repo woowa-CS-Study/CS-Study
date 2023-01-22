@@ -272,10 +272,43 @@ Model-View-Controller의 약자로,
 대표적인 디자인 패턴으로 개발할 때 구성요소를 Model, View, Controller로 역할을 나누어 개발을 하는 것을 의미한다.
 사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고 해당 데이터를 View에게 뿌려준다.
 
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7IE8f%2FbtqBRvw9sFF%2FAGLRdsOLuvNZ9okmGOlkx1%2Fimg.png" width="200" height="200">
+<br></br>
+MVC 패턴의 동작 순서
+사용자의 Action들은 Controller에 들어오게 됩니다.
+Controller는 사용자의 Action를 확인하고, Model을 업데이트합니다.
+Controller는 Model을 나타내줄 View를 선택합니다.
+View는 Model을 이용하여 화면을 나타냅니다.
+
 MVC패턴을 사용하는 프레임워크/라이브러리
 Angular JS
 DJango
 React 등
+</details>
+
+<details>
+<summary>MVVM Pattern⭐️⭐️⭐️</summary>
+<!-- 한칸 공백 필요  -->
+MVVM 패턴은 Model + View + View Model를 합친 용어입니다. Model과 View은 다른 패턴과 동일합니다.
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCiXz0%2FbtqBQ1iMiVT%2FstaXr7UO95opKgXEU01EY0%2Fimg.png" width="200" height="200">
+
+Model : 어플리케이션에서 사용되는 데이터와 그 데이터를 처리하는 부분입니다.
+View : 사용자에서 보여지는 UI 부분입니다.
+View Model : View를 표현하기 위해 만든 View를 위한 Model입니다. View를 나타내 주기 위한 Model이자 View를 나타내기 위한 데이터 처리를 하는 부분입니다.
+
+MVVM 패턴의 동작 순서
+사용자의 Action들은 View를 통해 들어오게 됩니다.
+View에 Action이 들어오면, Command 패턴으로 View Model에 Action을 전달합니다.
+View Model은 Model에게 데이터를 요청합니다.
+Model은 View Model에게 요청받은 데이터를 응답합니다.
+View Model은 응답 받은 데이터를 가공하여 저장합니다.
+View는 View Model과 Data Binding하여 화면을 나타냅니다.
+대표적인 디자인 패턴으로 개발할 때 구성요소를 Model, View, Controller로 역할을 나누어 개발을 하는 것을 의미한다.
+사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고 해당 데이터를 View에게 뿌려준다.
+
+장점
+MVVM 패턴은 View와 Model 사이의 의존성이 없습니다. 또한 Command 패턴과 Data Binding을 사용하여 View와 View Model 사이의 의존성 또한 없앤 디자인패턴입니다. 각각의 부분은 독립적이기 때문에 모듈화 하여 개발할 수 있습니다.
 </details>
 <br></br>
 

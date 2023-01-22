@@ -271,7 +271,7 @@ CSR: SPA (Single Page Application), 서버는 JSON파일만 보내주고, HTML�
 Model-View-Controller의 약자로,
 대표적인 디자인 패턴으로 개발할 때 구성요소를 Model, View, Controller로 역할을 나누어 개발을 하는 것을 의미한다.
 사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고 해당 데이터를 View에게 뿌려준다.
-
+<br></br>
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7IE8f%2FbtqBRvw9sFF%2FAGLRdsOLuvNZ9okmGOlkx1%2Fimg.png" width="200" height="200">
 <br></br>
 MVC 패턴의 동작 순서

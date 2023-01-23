@@ -75,7 +75,7 @@
 Event Bubbling:
 한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작함
 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작함
-
+<br></br>
 <img src="https://joshua1988.github.io/images/posts/web/javascript/event/event-bubble.png" height="200px" width="200px">
 
 Event Capturing:

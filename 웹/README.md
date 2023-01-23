@@ -2,6 +2,7 @@
 <details>
 <summary>브라우저 렌더링 방식에 대해 설명하세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 브라우저라는 것은 인터넷에 접속할 때 사용하는 크롬, 사파리, 파이어폭스 등을 말함
 
  1. HTML 파일과 CSS 파일을 파싱해서 각각 Tree를 만든다. (Parsing)
@@ -14,6 +15,7 @@
 <details>
 <summary>리플로우와 리페인트에 대해 설명하세요⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 리플로우: 생성된 DOM 노드의 레이아웃 수치 변경 시 영향 받은 모든 노드의 수치를 다시 계산하여 렌더 트리를 재생성하는 과정, DOM 요소의 기하학적 속성이 변경될 때, 브라우저 사이즈가 변할 때, 스타일시트가 로딩되었을 때 발생하는 변화들을 다시 계산해주는 과정을 뜻하며, 레이아웃이라고도 함
 
 리페인트: 리플로우 과정이 끝난 후 생성된 렌더 트리를 다시 그리는 과정, 변경된 요소를 실제로 화면에 그려주는 작업을 뜻함, 리플로우가 발생하면 필연적으로 리페인트가 실행됨, 리플로우보다는 상대적으로 훨씬 가벼운 작업임
@@ -22,6 +24,7 @@
 <details>
 <summary>웹사이트 속도를 개선하는 방법에 대해 아는대로 말해보세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 이미지 압축
 
 코드 정리 및 압축
@@ -36,6 +39,7 @@
 <details>
 <summary>반응형 웹은 무엇이고 장단점에 대해 설명하세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 정의: 한 가지의 웹사이트로 다양한 종류의 기기에 최적화된 화면을 보여주는 것
 
 장점
@@ -54,6 +58,7 @@
 <details>
 <summary>크로스 브라우징은 무엇인가요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 웹 페이지 제작 시에 모든 브라우저에서 깨지지 않고 의도한 대로 올바르게(호환성) 나오게 하는 작업
 </details>
 <br></br>
@@ -62,6 +67,7 @@
 <details>
 <summary>이벤트 핸들링이란⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 클릭, 키보드 입력 등 사용자의 어떤 행위를 처리하는 것을 이벤트 핸들링이라고 함
 
 - 이벤트를 받아줄 요소를 선택합니다.
@@ -72,6 +78,7 @@
 <details>
 <summary>이벤트 버블링(Event-Bubbling)과 이벤트캡쳐링(Event-Capturing)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 Event Bubbling:
 한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작함
 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작함
@@ -88,6 +95,7 @@ Event Capturing:
 <details>
 <summary>event.preventDefault메서드는 언제, 왜 사용하는지 설명해주세요⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 정의: 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트의 default 동작을 실행하지 않도록 지정하는 함수
 
 언제 사용:
@@ -103,6 +111,7 @@ preventDefalut는 해당 이벤트에 기본적으로 설정된 기본 액션을
 <details>
 <summary>이벤트 위임(event delegation)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 이벤트 위임은 캡쳐링과 버블링을 이용한 것으로, 여러 엘리먼트마다 각각 이벤트 핸들러를 할당하지 않고, 공통되는 부모에 이벤트 핸들러를 할당하여 이벤트를 관리하는 방식
 
 - 여러개의 자식 엘리먼트 이벤트 관리하기
@@ -114,6 +123,7 @@ preventDefalut는 해당 이벤트에 기본적으로 설정된 기본 액션을
 <details>
 <summary>CORS 오류란⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 Cross-Origin Resource Sharing의 약자로
 타 도메인 간에 자원을 공유할 수 있게 해주는 것을 의미한다
 
@@ -130,6 +140,7 @@ cors표준은 웹 브라우저가 사용하는 정보를 읽을 수 있도록 �
 <details>
 <summary>CORS 요청의 종류⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 Simple/Preflight, Credential/Non-Credential의 조합으로 4가지가 존재
 
 1. Simple Request
@@ -141,6 +152,7 @@ Simple/Preflight, Credential/Non-Credential의 조합으로 4가지가 존재
 <details>
 <summary>Preflight Request는 무엇인가요⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 사실 브라우저는 요청을 보낼때 한번에 바로 보내지않고, 먼저 예비 요청을 보내 서버와 잘 통신되는지 확인한 후 본 요청을 보낸다.
 
 즉, 예비 요청의 역할은 본 요청을 보내기 전에 브라우저 스스로 안전한 요청인지 미리 확인하는 것이다.
@@ -153,6 +165,7 @@ Simple/Preflight, Credential/Non-Credential의 조합으로 4가지가 존재
 <details>
 <summary>Document Object Model(DOM)를 설명하세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 문서 객체 모델(DOM, Document Object Model)은 XML이나 HTML 문서에 접근하기 위한 일종의 인터페이스입니다.
 
 이 객체 모델은 문서 내의 모든 요소를 정의하고, 각각의 요소에 접근하는 방법을 제공합니다.
@@ -161,6 +174,7 @@ Simple/Preflight, Credential/Non-Credential의 조합으로 4가지가 존재
 <details>
 <summary>DOM의 종류를 설명하세요⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 W3C DOM 표준은 세 가지 모델로 구분됩니다.
 
 1. Core DOM : 모든 문서 타입을 위한 DOM 모델
@@ -173,6 +187,7 @@ W3C DOM 표준은 세 가지 모델로 구분됩니다.
 <details>
 <summary>HTTP 프로토콜의 특징에 대해 설명해주세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 Hyper Text Transfer Protocol
 요청 메서드 를 정의하여, 주어진 리소스에 수행하길 원하는 행동을 나타내는 것
 
@@ -210,6 +225,7 @@ HTTP는 클라이언트가 서버에 요청을 보내면 서버는 그에 대한
 <details>
 <summary>HTTP Method의 종류는⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 GET
 특정 리소스의 표시를 요청할 때 사용, 오직 데이터를 받기만 한다.
 (SELECT 문을 이용한 데이터를 수신)
@@ -233,6 +249,7 @@ DELETE Method는 항상 보장되지 않는다.
 <details>
 <summary>Cookie는 무엇인가요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 쿠키는 클라이언트 로컬에 저장되는 Key-Value쌍의 작은 데이터 파일이다.
 사용자의 디스크나 웹 브라우저 메모리에 저장된다.
 클라이언트 측에 “key와 value”형태의 text 타입으로 데이터가 저장된다. 데이터의 크기에 제한이 있다.
@@ -248,6 +265,7 @@ DELETE Method는 항상 보장되지 않는다.
 <details>
 <summary>Session은 무엇인가요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 브라우저가 종료되기 전까지 클라이언트의 요청을 유지하게 해주는 기술이다.
 웹 서비스를 위한 사용자의 정보를 서버측에 저장한다.
 서버 측에 객체 타입으로 저장된다. 서버가 수용 가능한 만큼 저장할 수 있다.
@@ -264,20 +282,14 @@ session.invalidate() 혹은 웹 브라우저가 종료될 때까지 데이터가
 <details>
 <summary>Cookie와 Session의 차이는 무엇인가요⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
-쿠키와 세션의 역할은 비슷하다. 가장 큰 차이점은 사용자의 정보가 저장되는 위치이다.
-보안 면에서는 세션이 더 우수하고, 세션의 경우 서버의 처리가 필요하기 때문에 요청 속도는 쿠키가 더 빠르다.
 
-저장위치
-쿠키는 로컬에, 세션은 로컬과 서버에 저장됩니다.
+저장위치:쿠키는 로컬에, 세션은 로컬과 서버에 저장됩니다.
 
-보안
-쿠키는 탈취와 변조가 가능하지만, 세션은 ID값만 가지고 있고 서버에도 저장이 되어있기 때문에 상대적으로 안전합니다.
+보안:쿠키는 탈취와 변조가 가능하지만, 세션은 ID값만 가지고 있고 서버에도 저장이 되어있기 때문에 상대적으로 안전합니다.
 
-Lifecycle
-쿠키는 브라우저를 종료해도 파일로 남아있지만, 세션은 브라우저 종료시 세션을 삭제합니다
+Lifecycle:쿠키는 브라우저를 종료해도 파일로 남아있지만, 세션은 브라우저 종료시 세션을 삭제합니다
 
-속도
-쿠키는 파일에서 읽기 때문에 상대적으로 빠르고, 세션은 요청마다 서버에서 처리를 해야하기 때문에 비교적 느립니다.
+속도:쿠키는 파일에서 읽기 때문에 상대적으로 빠르고, 세션은 요청마다 서버에서 처리를 해야하기 때문에 비교적 느립니다.
 </details>
 <br></br>
 
@@ -285,6 +297,7 @@ Lifecycle
 <details>
 <summary>서버 사이드 렌더링 vs 클라이언트 사이드 렌더링은 무엇인가요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 SSR: 브라우저에 나타나는 형태 그대로를 HTML로 만들어 제공하며, 브라우저는 HTML을 표시하는 방식
 
 CSR: SPA (Single Page Application), 서버는 JSON파일만 보내주고, HTML을 그리는 역할은 JavaScript를 통해 클라이언트 측에서 수행
@@ -295,12 +308,14 @@ CSR: SPA (Single Page Application), 서버는 JSON파일만 보내주고, HTML�
 <details>
 <summary>디자인 패턴이란⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 어떤 것을 개발할 때 발생했던 문제점들을 정리해서 좀 더 쉽고 편리하게 개발할 수 있도록 만든 특정한 방법들을 의미한다.
 </details>
 
 <details>
 <summary>MVC Pattern⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 Model-View-Controller의 약자로,
 대표적인 디자인 패턴으로 개발할 때 구성요소를 Model, View, Controller로 역할을 나누어 개발을 하는 것을 의미한다.
 사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고 해당 데이터를 View에게 뿌려준다.
@@ -322,6 +337,7 @@ MVC패턴을 사용하는 프레임워크/라이브러리
 <details>
 <summary>MVVM Pattern⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 MVVM 패턴은 Model + View + View Model를 합친 용어입니다. Model과 View은 다른 패턴과 동일합니다.
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCiXz0%2FbtqBQ1iMiVT%2FstaXr7UO95opKgXEU01EY0%2Fimg.png" width="200" height="200">
@@ -352,6 +368,7 @@ MVVM 패턴은 View와 Model 사이의 의존성이 없습니다. 또한 Command
 <details>
 <summary>CSS Methodology란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 명확하고 일관성있는 규칙
 
 SMACSS(Scalable and Modular Architecture for CSS): 범주화
@@ -364,6 +381,7 @@ BEM(Block Element Modifier): 블록(block), 요소(element), 상태(modifier)로
 <details>
 <summary>SMACSS(Scalable and Modular Architecture for CSS)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 CSS를 범주화(Categorization)로 패턴화 하고자 하는 방법론이다
 
 SMACSS는 작성할 CSS를 비슷한 종류끼리 모아 5가지 스타일로 나누고 각 유형에 맞는 선택자와 작명법, 코딩 기법을 제시한다. 기본(base), 레이아웃(layout), 모듈(module), 상태(state), 테마(theme) 다섯가지의 범주를 제시한다.
@@ -393,6 +411,7 @@ SMACSS 사용시에는 지켜야 할 유의사항이 몇 가지 존재하는데,
 <details>
 <summary>OOCSS(Object Oriented CSS)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 CSS를 모듈 방식으로 작성하여 중복을 줄이는 방식의 방법론이다.
 주요 원리는 구조와 스타일을 분리해서 작성하는 것이다.
 
@@ -409,6 +428,7 @@ CSS를 모듈 방식으로 작성하여 중복을 줄이는 방식의 방법론�
 <details>
 <summary>BEM(Block Element Modifier)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 CSS 제작 방법론으로, 일종의 네이밍 컨벤션이라고 볼 수 있다.
 html 요소들을 각각 Block, Element, Modifier이렇게 세 가지로 분류해 작명한다.
 이를 통해 복잡한 UI에서도 쉽고 빠르게 인터페이스를 개발할 수 있으며 복사 및 붙여 넣기없이 기존 코드를 재사용 할 수 있습니다.
@@ -428,6 +448,7 @@ html 요소들을 각각 Block, Element, Modifier이렇게 세 가지로 분류�
 <details>
 <summary>Normalize.css와 Reset.css 의 차이는⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 Reset.css는 초기화를 시키는 것에 집중
 Normalize.css는 초기화를 시키지만 어느정도의 스타일이 가미되어있음
 </details>
@@ -437,6 +458,7 @@ Normalize.css는 초기화를 시키지만 어느정도의 스타일이 가미�
 <details>
 <summary>웹팩(webpack)은 무엇이고 왜 필요한가요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 기능별로 모듈화했던 자바스크립트 파일들을 묶는 것을 말함
 
 장점
@@ -448,6 +470,7 @@ Normalize.css는 초기화를 시키지만 어느정도의 스타일이 가미�
 <details>
 <summary>바벨(Babel)과 폴리필(Polyfill)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 바벨의 뜻:
 바벨은 트랜스파일러로, 모던 자바스크립트 코드를 구 표준을 준수하는 코드로 바꿔줍니다.
 
@@ -463,6 +486,7 @@ Normalize.css는 초기화를 시키지만 어느정도의 스타일이 가미�
 <details>
 <summary>CI와 CD란⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
+
 CI는 빌드/테스트 자동화 과정 과정
 CD는 배포 자동화 과정
 

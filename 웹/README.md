@@ -14,7 +14,8 @@
 <details>
 <summary>리플로우와 리페인트에 대해 설명하세요⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
-리플로우: 생성된 DOM 노드의 레이아웃 수치 변경 시 영향 받은 모드 노드의 수치를 다시 계산하여 렌더 트리를 재생성하는 과정, DOM 요소의 기하학적 속성이 변경될 때, 브라우저 사이즈가 변할 때, 스타일시트가 로딩되었을 때 발생하는 변화들을 다시 계산해주는 과정을 뜻하며, 레이아웃이라고도 함
+리플로우: 생성된 DOM 노드의 레이아웃 수치 변경 시 영향 받은 모든 노드의 수치를 다시 계산하여 렌더 트리를 재생성하는 과정, DOM 요소의 기하학적 속성이 변경될 때, 브라우저 사이즈가 변할 때, 스타일시트가 로딩되었을 때 발생하는 변화들을 다시 계산해주는 과정을 뜻하며, 레이아웃이라고도 함
+
 리페인트: 리플로우 과정이 끝난 후 생성된 렌더 트리를 다시 그리는 과정, 변경된 요소를 실제로 화면에 그려주는 작업을 뜻함, 리플로우가 발생하면 필연적으로 리페인트가 실행됨, 리플로우보다는 상대적으로 훨씬 가벼운 작업임
 </details>
 
@@ -22,9 +23,13 @@
 <summary>웹사이트 속도를 개선하는 방법에 대해 아는대로 말해보세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 이미지 압축
+
 코드 정리 및 압축
+
 호스팅 업그레이드
+
 브라우저 캐싱 활성화
+
 웹 페이지 속도 개선 테스트
 </details>
 
@@ -58,6 +63,7 @@
 <summary>이벤트 핸들링이란⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 클릭, 키보드 입력 등 사용자의 어떤 행위를 처리하는 것을 이벤트 핸들링이라고 함
+
 - 이벤트를 받아줄 요소를 선택합니다.
 - 그 요소가 어떤 이벤트에 반응할지, 즉 요소와 이벤트를 연결해주는 바인딩을 합니다.
 - 이벤트가 발생했을 때 실행될 코드를 작성합니다.
@@ -67,12 +73,16 @@
 <summary>이벤트 버블링(Event-Bubbling)과 이벤트캡쳐링(Event-Capturing)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 Event Bubbling:
-한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작
+한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작함
 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작함
-Capturing:
-캡처링 단계 – 이벤트가 하위 요소로 전파되는 단계
-타깃 단계 – 이벤트가 실제 타깃 요소에 전달되는 단계
-버블링 단계 – 이벤트가 상위 요소로 전파되는 단계
+
+<img src="https://joshua1988.github.io/images/posts/web/javascript/event/event-bubble.png" height="200px" width="200px">
+
+Event Capturing:
+이벤트 캡쳐는 이벤트 버블링과 반대 방향으로 진행되는 이벤트 전파 방식입니다.
+
+<img src="https://joshua1988.github.io/images/posts/web/javascript/event/event-capture.png" height="200px" width="200px">
+
 </details>
 
 <details>
@@ -94,8 +104,9 @@ preventDefalut는 해당 이벤트에 기본적으로 설정된 기본 액션을
 <summary>이벤트 위임(event delegation)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 이벤트 위임은 캡쳐링과 버블링을 이용한 것으로, 여러 엘리먼트마다 각각 이벤트 핸들러를 할당하지 않고, 공통되는 부모에 이벤트 핸들러를 할당하여 이벤트를 관리하는 방식
-여러개의 자식 엘리먼트 이벤트 관리하기
-동적 엘리먼트에 대한 이벤트 관리하기
+
+- 여러개의 자식 엘리먼트 이벤트 관리하기
+- 동적 엘리먼트에 대한 이벤트 관리하기
 </details>
 <br></br>
 
@@ -105,7 +116,9 @@ preventDefalut는 해당 이벤트에 기본적으로 설정된 기본 액션을
 <!-- 한칸 공백 필요  -->
 Cross-Origin Resource Sharing의 약자로
 타 도메인 간에 자원을 공유할 수 있게 해주는 것을 의미한다
+
 cors표준은 웹 브라우저가 사용하는 정보를 읽을 수 있도록 허가된 출처 집합을 서버에게 알려주도록 허용하는 특정 http헤더를 추가함으로써 동작한다
+
 1. 브라우저가 리소스 요청됨(coross-origin 요청) ->
 2. 보안상의 이유로 제한(Same-Origin-Policy동일 근원 정책) ->
 3. 요청하는 대상과 프로토콜과 포트가 같아야함 ->
@@ -118,10 +131,11 @@ cors표준은 웹 브라우저가 사용하는 정보를 읽을 수 있도록 �
 <summary>CORS 요청의 종류⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 Simple/Preflight, Credential/Non-Credential의 조합으로 4가지가 존재
-1) Simple Request
-2) Preflight Request
-3) Request with Credential
-4) Request without Credential
+
+1. Simple Request
+2. Preflight Request
+3. Request with Credential
+4. Request without Credential
 </details>
 
 <details>
@@ -140,6 +154,7 @@ Simple/Preflight, Credential/Non-Credential의 조합으로 4가지가 존재
 <summary>Document Object Model(DOM)를 설명하세요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 문서 객체 모델(DOM, Document Object Model)은 XML이나 HTML 문서에 접근하기 위한 일종의 인터페이스입니다.
+
 이 객체 모델은 문서 내의 모든 요소를 정의하고, 각각의 요소에 접근하는 방법을 제공합니다.
 </details>
 
@@ -160,7 +175,9 @@ W3C DOM 표준은 세 가지 모델로 구분됩니다.
 <!-- 한칸 공백 필요  -->
 Hyper Text Transfer Protocol
 요청 메서드 를 정의하여, 주어진 리소스에 수행하길 원하는 행동을 나타내는 것
+
 www 상에서 서버와 클라이언트가 정보(데이터)를 주고 받을 수 있는 프로토콜로, HTML문서를 주고 받는데 사용됨.
+
 TCP 방식 : client - server 중 한 곳이 연결을 끊을 때까지 연결을 유지함.
 HTTP 방식 : client가 server에서 html을 다운받고 나면 연결을 끊어버림.(HTTP통신의 특징 - 비연결(stateless))
 
@@ -183,8 +200,10 @@ Response(수신)
 웹 서버에서 웹 브라우저(Client)로의 응답. 클라이언트로부터 서버에게 요청이 일어나고 나면 서버는 브라우저에 전달할 데이터를 Response 객체를 통해 전달한다.
 ___
 HTTP는 클라이언트가 서버에 요청을 보내면 서버는 그에 대한 응답을 보내는 클라이언트 서버 구조로 이루어져 있으며, 무상태성, 비연결성이라는 특징을 갖습니다.
+
 무상태성은 서버가 클라이언트의 상태를 기억하지 않는다는 뜻입니다. 즉, 상태 기억의 주체가 클라이언트가 된다는 말이며, 중간에 요청을 처리하는 서버가 바뀌어도 클라이언트가 상태를 잘 담아서 요청을 보내면 응답을 제대로 받을 수 있습니다.
 서버가 바뀌어도 응답에 문제가 없다는 뜻은, 필요에 따라 서버를 무한히 증설할 수 있다는 의미입니다. 즉, 무상태성이라는 특성 덕에 서버의 무한한 증설이 가능해집니다.
+
 비연결성은 요청과 응답을 주고 받은 후에 서버와의 연결을 끊는 것을 의미합니다. 서버와의 연결을 지속하지 않고 필요할 때에만 연결하기 때문에 최소한의 자원만 사용하게 된다는 장점이 있습니다. 하지만 HTTP 1.0 버전은 여러 요청을 보내야 할 때에도 매 요청마다 서버 연결과 종료를 반복하는 비효율성이 발생한다는 한계가 있습니다. 이러한 한계점을 HTTP 1.1 버전에서는 지속 연결과 파이프라인, HTTP 2.0 버전에서는 멀티플렉싱을 활용해서 해결합니다.
 </details>
 
@@ -198,7 +217,6 @@ GET
 POST
 특정 리소스에 엔티티를 제출할 때 사용
 서버에 Data를 보내기 위한 용도
-POST 메서드는 멱등성을 성립되지 않음
 
 PUT
 서버가 Client 요청의 Body를 확인하여 요청 URL에 새로운 Resouce를 생성
@@ -219,11 +237,11 @@ DELETE Method는 항상 보장되지 않는다.
 클라이언트 측에 “key와 value”형태의 text 타입으로 데이터가 저장된다. 데이터의 크기에 제한이 있다.
 
 프로세스
-브라우저에서 웹 페이지 접속
-웹 서버에서 쿠키를 생성.
-생성한 쿠키에 데이터를 담아 요청에 응답할 때 클라이언트에게 함께 전송.
-클라이언트가 보관하다가 서버에 재요청할 때 쿠키를 함께 전송.
-클라이언트와 서버가 로그인 정보가 유지되어있는 것처럼 사용.
+- 브라우저에서 웹 페이지 접속
+- 웹 서버에서 쿠키를 생성.
+- 생성한 쿠키에 데이터를 담아 요청에 응답할 때 클라이언트에게 함께 전송.
+- 클라이언트가 보관하다가 서버에 재요청할 때 쿠키를 함께 전송.
+- 클라이언트와 서버가 로그인 정보가 유지되어있는 것처럼 사용.
 </details>
 
 <details>
@@ -233,9 +251,9 @@ DELETE Method는 항상 보장되지 않는다.
 서버 측에 객체 타입으로 저장된다. 서버가 수용 가능한 만큼 저장할 수 있다.
 
 프로세스
-클라이언트가 서버에 접속 시 세션 ID를 발급
-클라이언트는 쿠키(쿠키이름 : JSESSIONID)를 이용해 세션 ID를 저장해서 가지고 있음.
-클라이언트가 서버에 재 요청 시 쿠키(JSESSIONID)를 이용하여 세션ID 값을 서버에 전달.
+- 클라이언트가 서버에 접속 시 세션 ID를 발급
+- 클라이언트는 쿠키(쿠키이름 : JSESSIONID)를 이용해 세션 ID를 저장해서 가지고 있음.
+- 클라이언트가 서버에 재 요청 시 쿠키(JSESSIONID)를 이용하여 세션ID 값을 서버에 전달.
 
 저장 기간
 session.invalidate() 혹은 웹 브라우저가 종료될 때까지 데이터가 유지된다.
@@ -254,6 +272,7 @@ session.invalidate() 혹은 웹 브라우저가 종료될 때까지 데이터가
 <summary>서버 사이드 렌더링 vs 클라이언트 사이드 렌더링은 무엇인가요⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 SSR: 브라우저에 나타나는 형태 그대로를 HTML로 만들어 제공하며, 브라우저는 HTML을 표시하는 방식
+
 CSR: SPA (Single Page Application), 서버는 JSON파일만 보내주고, HTML을 그리는 역할은 JavaScript를 통해 클라이언트 측에서 수행
 </details>
 <br></br>
@@ -275,15 +294,15 @@ Model-View-Controller의 약자로,
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7IE8f%2FbtqBRvw9sFF%2FAGLRdsOLuvNZ9okmGOlkx1%2Fimg.png" width="200" height="200">
 <br></br>
 MVC 패턴의 동작 순서
-사용자의 Action들은 Controller에 들어오게 됩니다.
-Controller는 사용자의 Action를 확인하고, Model을 업데이트합니다.
-Controller는 Model을 나타내줄 View를 선택합니다.
-View는 Model을 이용하여 화면을 나타냅니다.
+사용자의 Action들은 Controller에 들어오게 된다.
+Controller는 사용자의 Action를 확인하고, Model을 업데이트한다.
+Controller는 Model을 나타내줄 View를 선택한다.
+View는 Model을 이용하여 화면을 나타낸다.
 
 MVC패턴을 사용하는 프레임워크/라이브러리
-Angular JS
-DJango
-React 등
+- Angular JS
+- DJango
+- React 등
 </details>
 
 <details>
@@ -294,20 +313,23 @@ MVVM 패턴은 Model + View + View Model를 합친 용어입니다. Model과 Vie
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCiXz0%2FbtqBQ1iMiVT%2FstaXr7UO95opKgXEU01EY0%2Fimg.png" width="200" height="200">
 
 Model : 어플리케이션에서 사용되는 데이터와 그 데이터를 처리하는 부분입니다.
+
 View : 사용자에서 보여지는 UI 부분입니다.
+
 View Model : View를 표현하기 위해 만든 View를 위한 Model입니다. View를 나타내 주기 위한 Model이자 View를 나타내기 위한 데이터 처리를 하는 부분입니다.
 
 MVVM 패턴의 동작 순서
-사용자의 Action들은 View를 통해 들어오게 됩니다.
-View에 Action이 들어오면, Command 패턴으로 View Model에 Action을 전달합니다.
-View Model은 Model에게 데이터를 요청합니다.
-Model은 View Model에게 요청받은 데이터를 응답합니다.
-View Model은 응답 받은 데이터를 가공하여 저장합니다.
-View는 View Model과 Data Binding하여 화면을 나타냅니다.
-대표적인 디자인 패턴으로 개발할 때 구성요소를 Model, View, Controller로 역할을 나누어 개발을 하는 것을 의미한다.
-사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고 해당 데이터를 View에게 뿌려준다.
+1. 사용자의 Action들은 View를 통해 들어오게 됩니다.
+2. View에 Action이 들어오면, Command 패턴으로 View Model에 Action을 전달합니다.
+3. View Model은 Model에게 데이터를 요청합니다.
+4. Model은 View Model에게 요청받은 데이터를 응답합니다.
+5. View Model은 응답 받은 데이터를 가공하여 저장합니다.
+6. View는 View Model과 Data Binding하여 화면을 나타냅니다.
+7. 대표적인 디자인 패턴으로 개발할 때 구성요소를 Model, View, Controller로 역할을 나누어 개발을 하는 것을 의미한다.
+8. 사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고 해당 데이터를 View에게 뿌려준다.
 
 장점
+
 MVVM 패턴은 View와 Model 사이의 의존성이 없습니다. 또한 Command 패턴과 Data Binding을 사용하여 View와 View Model 사이의 의존성 또한 없앤 디자인패턴입니다. 각각의 부분은 독립적이기 때문에 모듈화 하여 개발할 수 있습니다.
 </details>
 <br></br>
@@ -317,8 +339,11 @@ MVVM 패턴은 View와 Model 사이의 의존성이 없습니다. 또한 Command
 <summary>CSS Methodology란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 명확하고 일관성있는 규칙
+
 SMACSS(Scalable and Modular Architecture for CSS): 범주화
+
 OOCSS(Object Oriented CSS): 구조와 모양을 분리,컨테이너와 컨텐츠를 분리
+
 BEM(Block Element Modifier): 블록(block), 요소(element), 상태(modifier)로 구분하여 클래스 작성하며 엄격한 네이밍 규칙을 가짐
 </details>
 
@@ -326,15 +351,21 @@ BEM(Block Element Modifier): 블록(block), 요소(element), 상태(modifier)로
 <summary>SMACSS(Scalable and Modular Architecture for CSS)이란⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 CSS를 범주화(Categorization)로 패턴화 하고자 하는 방법론이다
+
 SMACSS는 작성할 CSS를 비슷한 종류끼리 모아 5가지 스타일로 나누고 각 유형에 맞는 선택자와 작명법, 코딩 기법을 제시한다. 기본(base), 레이아웃(layout), 모듈(module), 상태(state), 테마(theme) 다섯가지의 범주를 제시한다.
+
 기본(base)
 : Reset, Variable 등을 포함하고 !important를 쓰지 않는다.
+
 레이아웃(layout)
 : 주요 요소(id)와 하위 요소(class)로 구분하고 접두사를 사용한다.
+
 모듈(module)
 : 재사용성이 높은 구성 요소를 정의한다.
+
 상태(state)
 : 요소의 상태 변화를 표현하고 접두사 “is-“나 “s-“를 사용한다.
+
 테마(theme)
 : 사용자가 선택 가능 하도록 스타일을 재선언하여 사용한다.
 
@@ -405,6 +436,7 @@ Normalize.css는 초기화를 시키지만 어느정도의 스타일이 가미�
 <!-- 한칸 공백 필요  -->
 바벨의 뜻:
 바벨은 트랜스파일러로, 모던 자바스크립트 코드를 구 표준을 준수하는 코드로 바꿔줍니다.
+
 바벨은 코드를 재작성해주는 트랜스파일러 프로그램입니다. 바벨은 개발자의 컴퓨터에서 돌아가는데, 이를 실행하면 기존 코드가 구 표준을 준수하는 코드로 변경됩니다. 변경된 코드는 웹사이트 형태로 사용자에게 전달되어 버전 차이로 인한 호환성 문제를 해결 해 줍니다. 웹팩과 같은 모던 프로젝트 빌드 시스템은 코드가 수정될 때마다 자동으로 트랜스파일러를 동작시켜줍니다.
 
 폴리필의 뜻:
@@ -417,10 +449,11 @@ Normalize.css는 초기화를 시키지만 어느정도의 스타일이 가미�
 <details>
 <summary>CI와 CD란⭐️⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
-CI는 간단히 요약하자면 빌드/테스트 자동화 과정 과정
-CD는 간단히 말하면 배포 자동화 과정
+CI는 빌드/테스트 자동화 과정 과정
+CD는 배포 자동화 과정
+
 CI/CD는 자동화하여 애플리케이션을 더욱 짧은 주기로 고객에게 제공하는 방법
-CI/CD의 기본 개념은 지속적인 통합, 지속적인 서비스 제공, 지속적인 배포
+
 CI/CD는 새로운 코드 통합으로 인해 개발 및 운영팀에 발생하는 문제(일명 "통합 지옥(integration hell)")를 해결하기 위한 솔루션
 </details>
 <br></br>

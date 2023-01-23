@@ -89,16 +89,15 @@ Event Capturing:
 이벤트 캡쳐는 이벤트 버블링과 반대 방향으로 진행되는 이벤트 전파 방식입니다.
 
 <img src="https://joshua1988.github.io/images/posts/web/javascript/event/event-capture.png" height="200px" width="200px">
-
 </details>
 
 <details>
-<summary>event.preventDefault메서드는 언제, 왜 사용하는지 설명해주세요⭐️⭐️</summary>
+<summary>event.preventDefault메서드는 왜 사용하는지 설명해주세요⭐️⭐️</summary>
 <!-- 한칸 공백 필요  -->
 
 정의: 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트의 default 동작을 실행하지 않도록 지정하는 함수
 
-언제 사용:
+사용하는 이유:
 - 'a태그'를 클릭했을 때 지정된 href 링크로 이동하지 않게 하고 싶을 때
 - 'form태그'내의 submit 역할을 하는 버튼을 클릭했을 때, 새로 실행하지 않게 하고 싶을 때
 
